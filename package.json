@@ -1,0 +1,32 @@
+{
+  "name": "react-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "./packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run storybook -w @ClipMX/clip-storybbook",
+    "build": "npm run build-storybook -w @ClipMX/clip-storybbook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscaroceguera/poc-design-system-monorepo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscaroceguera/poc-design-system-monorepo/issues"
+  },
+  "homepage": "https://github.com/oscaroceguera/poc-design-system-monorepo#readme",
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.3.1",
+    "@mui/material": "^5.3.1"
+  }
+}
