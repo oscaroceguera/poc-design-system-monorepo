@@ -10,7 +10,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-icons": "npm run build --workspace @oceb/icons",
+    "build-illustrations": "npm run build --workspace @oceb/illustrations"
   },
   "repository": {
     "type": "git",

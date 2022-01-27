@@ -11,7 +11,9 @@
 
 3. test run story book
 
-4. eslint, prettier, test, husky (devDependencies)
+4. create some components, icons and illustrations with material-ui
+
+5. eslint, prettier, test, husky (devDependencies)
 
 Create a scoped workspace
 
@@ -24,4 +26,8 @@ Adde dependecies between workspaces
 
 ```shell
 npm install @oceb/core --workspace @oceb/icons
+```
+
+```js
+"npm run storybook -w @oceb/icons",
 ```

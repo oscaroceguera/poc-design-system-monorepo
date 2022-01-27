@@ -1,6 +1,6 @@
 import React from "react";
 
-import AddIcon from "@oceb/icons/Add";
+import AddIcon from "@oceb/icons/src/Add";
 
 const Card = (props) => (
   <div style={{ border: "1px solid red" }}>{props.children}</div>

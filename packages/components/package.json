@@ -7,7 +7,7 @@
     "@oceb/icons": "^1.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo $npm_package_version"
   },
   "repository": {
     "type": "git",
