@@ -1,1 +1,3 @@
-export * from "@material-ui/icons";
+import Add from "./Add";
+
+export { Add };

@@ -1,8 +1,11 @@
 {
-  "name": "@ClipMX/icons",
+  "name": "@oceb/icons",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "devDependencies": {
+    "@oceb/core": "^1.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,8 +14,8 @@
     "url": "git+https://github.com/oscaroceguera/poc-design-system-monorepo.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "oscaroceguera",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/oscaroceguera/poc-design-system-monorepo/issues"
   },

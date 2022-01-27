@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrokenLink } from "@ClipMX/illustrations/ClipIllustrations";
+import BrokenLink from "./BrokenLink";
 
 const Card = (props) => (
   <div style={{ border: "1px solid red", background: "red" }}>

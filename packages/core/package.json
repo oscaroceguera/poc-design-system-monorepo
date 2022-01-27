@@ -1,0 +1,15 @@
+{
+  "name": "@oceb/core",
+  "version": "1.0.0",
+  "description": "base library for oceb",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "oscaroceguera",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.3.1",
+    "@mui/material": "^5.3.1"
+  }
+}

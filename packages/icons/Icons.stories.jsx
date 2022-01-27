@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Add as AddIcon } from "@ClipMX/icons/ClipIcons";
+import AddIcon from "./Add";
 
 const Card = (props) => (
   <div style={{ border: "1px solid red" }}>{props.children}</div>

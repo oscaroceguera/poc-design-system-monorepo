@@ -1,10 +1,10 @@
 {
-  "name": "@oceb/illustrations",
+  "name": "@oceb/components",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "devDependencies": {
-    "@oceb/core": "^1.0.0"
+    "@oceb/icons": "^1.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

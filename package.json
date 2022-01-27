@@ -1,32 +1,35 @@
 {
-  "name": "react-component",
+  "name": "@oceb",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "private": true,
   "workspaces": [
     "./packages/*"
   ],
+  "description": "1. storybook, components, icons, illustrations (run) 2. eslint, prettier, test, husky (devDependencies) 3. build to storybook 4. build to usage each libraries 5. actions 6. public",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run storybook -w @ClipMX/clip-storybbook",
-    "build": "npm run build-storybook -w @ClipMX/clip-storybbook"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oscaroceguera/poc-design-system-monorepo.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "oscaroceguera",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/oscaroceguera/poc-design-system-monorepo/issues"
   },
   "homepage": "https://github.com/oscaroceguera/poc-design-system-monorepo#readme",
-  "dependencies": {
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
-    "@mui/icons-material": "^5.3.1",
-    "@mui/material": "^5.3.1"
-  }
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@storybook/addon-actions": "^6.4.14",
+    "@storybook/addon-essentials": "^6.4.14",
+    "@storybook/addon-links": "^6.4.14",
+    "@storybook/react": "^6.4.14",
+    "babel-loader": "^8.2.3"
+  },
+  "dependencies": {}
 }
