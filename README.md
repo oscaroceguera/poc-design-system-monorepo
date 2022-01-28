@@ -1,19 +1,21 @@
-1. Storybook root:
+1. ✅ Storybook root:
 
 - config to run for packages monorepos
 
-2. create within packages:
+2. ✅ create within packages:
 
 - core - all dependencies that we can shared
 - components
 - icons
 - illustrations
 
-3. test run story book
+3. ✅ test run story book
 
-4. eslint, prettier, test, husky (devDependencies)
+4. ✅ eslint, prettier, test, husky (devDependencies)
 
-5. create some components, icons and illustrations with material-ui
+5. jest and precommit
+
+6. create some components, icons and illustrations with material-ui
 
 Create a scoped workspace
 
