@@ -1,0 +1,40 @@
+{
+  "extends": ["react-app", "plugin:prettier/recommended"],
+  "plugins": ["react"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "rules": {
+    "react-hooks/exhaustive-deps": "warn",
+    "import/no-unresolved": ["off", { "ignore": [".css$"] }],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true
+      },
+      {
+        "object-curly-spacing": "always"
+      }
+    ],
+    "import/no-anonymous-default-export": [
+      "error",
+      {
+        "allowArray": true,
+        "allowArrowFunction": true,
+        "allowAnonymousClass": true,
+        "allowAnonymousFunction": true,
+        "allowCallExpression": true,
+        "allowLiteral": true,
+        "allowObject": true
+      }
+    ]
+  }
+}

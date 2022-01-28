@@ -1,3 +1,3 @@
-import BrokenLink from "./BrokenLink";
+import BrokenLink from './BrokenLink';
 
 export { BrokenLink };

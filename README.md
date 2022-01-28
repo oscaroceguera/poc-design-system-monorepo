@@ -11,9 +11,9 @@
 
 3. test run story book
 
-4. create some components, icons and illustrations with material-ui
+4. eslint, prettier, test, husky (devDependencies)
 
-5. eslint, prettier, test, husky (devDependencies)
+5. create some components, icons and illustrations with material-ui
 
 Create a scoped workspace
 
