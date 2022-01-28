@@ -1,24 +1,20 @@
-import React from "react";
+import React from 'react';
 
-import BrokenLink from "./BrokenLink";
+import BrokenLink from './BrokenLink';
 
-const Card = (props) => (
-  <div style={{ border: "1px solid red", background: "red" }}>
-    {props.children}
-  </div>
-);
+const Card = (props) => <div style={{ border: '1px solid red', background: 'red' }}>{props.children}</div>;
 
 export default {
-  title: "Illustrations",
+  title: 'Illustrations',
   component: Card,
 };
 
 export const ClipIllustrationsStory = () => {
   return (
-    <div style={{ border: "1px solid red" }}>
+    <div style={{ border: '1px solid red' }}>
       <BrokenLink />
     </div>
   );
 };
 
-ClipIllustrationsStory.storyName = "Clip Illustrations";
+ClipIllustrationsStory.storyName = 'Clip Illustrations';

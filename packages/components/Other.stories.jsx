@@ -1,22 +1,20 @@
-import React from "react";
+import React from 'react';
 
-import AddIcon from "@oceb/icons/dist/Add";
+import AddIcon from '@oceb/icons/dist/Add';
 
-const Card = (props) => (
-  <div style={{ border: "1px solid red" }}>{props.children}</div>
-);
+const Card = (props) => <div style={{ border: '1px solid red' }}>{props.children}</div>;
 
 export default {
-  title: "Icons chidos",
+  title: 'Icons Other',
   component: Card,
 };
 
 export const ClipIconsStory = () => {
   return (
-    <div style={{ border: "1px solid red" }}>
+    <div style={{ border: '1px solid red' }}>
       <AddIcon />
     </div>
   );
 };
 
-ClipIconsStory.storyName = "Clip Icons locos";
+ClipIconsStory.storyName = 'Clip Icons locos';
