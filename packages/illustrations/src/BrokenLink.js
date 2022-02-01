@@ -1,5 +1,5 @@
 import React from 'react';
-import { createSvgIcon } from '@oceb/core/node_modules/@mui/material/utils';
+import { createSvgIcon } from '@mui/material/utils';
 
 const Illustration = createSvgIcon(
   <>

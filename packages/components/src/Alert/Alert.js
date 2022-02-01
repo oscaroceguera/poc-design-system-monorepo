@@ -1,6 +1,6 @@
 import React from 'react';
-import Alert from '@oceb/core/node_modules/@mui/material/Alert';
-import Stack from '@oceb/core/node_modules/@mui/material/Stack';
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
 
 export default function ClipAlert() {
   return (
