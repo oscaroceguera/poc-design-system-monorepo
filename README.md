@@ -13,7 +13,7 @@
 
 4. ✅ eslint, prettier, test, husky (devDependencies)
 
-5. jest and precommit
+5. ✅ jest and precommit
 
 6. create some components, icons and illustrations with material-ui
 

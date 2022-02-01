@@ -10,7 +10,8 @@
   "scripts": {
     "lint": "eslint ./packages --ext .js,.jsx",
     "lint:fix": "eslint ./packages --ext .js,.jsx --fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --env=jsdom --watch",
+    "test:nowatch": "jest --env=jsdom --watchAll=false",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build-icons": "npm run build --workspace @oceb/icons",
@@ -40,7 +41,10 @@
     "@storybook/addon-essentials": "^6.4.14",
     "@storybook/addon-links": "^6.4.14",
     "@storybook/react": "^6.4.14",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
     "babel-loader": "^8.2.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-preset-minify": "^0.5.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.7.0",
@@ -49,6 +53,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
     "husky": "^4.3.8",
+    "jest": "^27.4.7",
     "lint-staged": "^12.3.2",
     "prettier": "^2.5.1",
     "pretty-quick": "^3.1.3"
@@ -63,7 +68,25 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "ls"
+      "pre-push": "npm run test:nowatch"
+    }
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ],
+    "collectCoverageFrom": [
+      "packages/**/*.{js,jsx,mjs}"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/**/?(*.)(spec|test).{js,jsx,mjs}"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!lodash-es).+\\.js$"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
   }
 }

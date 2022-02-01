@@ -9,21 +9,7 @@
     "@babel/env",
     "@babel/react"
   ],
-  "env": {
-    "test": {
-      "plugins": [
-        "transform-es2015-modules-commonjs",
-        ["transform-runtime", { "polyfill": false }]
-      ]
-    }
-  },
-  "plugins": [
-    "@babel/plugin-proposal-class-properties",
-    "@babel/plugin-proposal-object-rest-spread"
-  ],
-  "ignore": [
-    "./src/**/*.test.js",
-    "./src/**/*.stories.js",
-    "./src/**/*.stories.jsx"
-  ]
+
+  "plugins": ["@babel/plugin-proposal-class-properties", "@babel/plugin-proposal-object-rest-spread"],
+  "ignore": ["./src/**/*.test.js", "./src/**/*.stories.js", "./src/**/*.stories.jsx"]
 }
