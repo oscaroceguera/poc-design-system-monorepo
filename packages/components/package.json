@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
-    "@oceb/icons": "^2.1.1"
+    "@oceb/icons": "^2.1.1",
+    "@oceb/core": "^1.0.0"
   },
   "scripts": {
     "test": "echo $npm_package_version"

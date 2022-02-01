@@ -15,7 +15,7 @@
 
 5. ✅ jest and precommit
 
-6. create some components, icons and illustrations with material-ui
+6. ✅ create some components, icons and illustrations with material-ui and testing-library
 
 Create a scoped workspace
 
