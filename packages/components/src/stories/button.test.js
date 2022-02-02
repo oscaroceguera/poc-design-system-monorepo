@@ -13,7 +13,7 @@ test('Button primary', async () => {
   render(<Button {...props} />);
   const btnAdd = screen.getByRole('button', { name: 'Agregar' });
   expect(btnAdd).toBeInTheDocument();
-  expect(btnAdd).toHaveClass('storybook-button--primary');
+  expect(btnAdd).toHaveClass('storybook-button--secondary');
 });
 test('Button secondary', async () => {
   const props = {
